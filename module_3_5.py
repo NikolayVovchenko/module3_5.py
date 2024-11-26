@@ -35,18 +35,18 @@ result2 = get_multiplied_digits(510024)
 print(result2)
 
 
-#def get_multiplied_digits(nomber):
-#    str_number = str(nomber)
-#    if len (str_number) > 1:
-#        first = int(str_number[0])
-#       return first * get_multiplied_digits(int(str_number[1:0]))
+def get_multiplied_digits(nomber):
+    str_number = str(nomber)
+    if len (str_number) > 1:
+        first = int(str_number[0])
+       return first * get_multiplied_digits(int(str_number[1:0]))
 
-#   else:
-#        return int(str_number)
+   else:
+        return int(str_number)
 
 
 
-#result = get_multiplied_digits(40203)
-#print(result)
-#result2 = get_multiplied_digits(402030)
-#print(result2)
+result = get_multiplied_digits(40203)
+print(result)
+result2 = get_multiplied_digits(402030//10)
+print(result2)
